@@ -16,6 +16,7 @@ supermarkt$t_tot = (supermarkt$t_out - supermarkt$t_in)*24*60
 # categorische veranderlijke: bezoek in de week of in het weekend
 supermarkt$t_week = factor(supermarkt$day, levels=c(1,2,3), labels=c("week","weekend","weekend"), ordered=TRUE)
 
+#TIM
 # labels aanpassen
 supermarkt$day[supermarkt$day=="1"] = "Donderdag"
 supermarkt$day[supermarkt$day=="2"] = "Vrijdag"
